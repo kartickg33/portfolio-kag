@@ -1,0 +1,70 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: rgba(0,0,0,0.9); 
+    image-rendering: optimizeQuality;
+    image-rendering: pixelated;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.active{
+    color:red;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+    font-weight:700;
+}
+a{
+    text-decoration:none;
+}
+a[href="#about"]{
+    padding-right: 20px;
+    padding-left: 20px;
+    color:snow;
+    font-size:24px;
+    font-weight:700;
+}
+a[href="#education"]{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:snow;
+    font-size: 24px;
+    font-weight:700;
+}
+a[href="#techstack"]{
+    padding-left: 20px;
+    padding-right: 20px;
+    color:snow;
+    font-size: 24px;
+    font-weight:700;
+}
+a[href="#contact"]{
+    padding-right: 20px;
+    padding-left: 20px;
+    color:snow;
+    font-size:24px;
+    font-weight:700;
+}
+.nav-link:hover{
+    transition:0.5s;
+    color:red;
+}
+#home{
+    margin-top: 50px;
+    color:snow;
+    font-size:32px;
+    top:50%;
+    left:50%;
+    height:400px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
