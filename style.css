@@ -1,12 +1,11 @@
 *{
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background: rgba(0,0,0,0.9); 
-    image-rendering: optimizeQuality;
-    image-rendering: pixelated;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .navbar{
@@ -38,7 +37,7 @@ a[href="#education"]{
     font-size: 24px;
     font-weight:700;
 }
-a[href="#techstack"]{
+a[href="#skills"]{
     padding-left: 20px;
     padding-right: 20px;
     color:snow;
@@ -70,21 +69,22 @@ a[href="#contact"]{
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.9));
     backdrop-filter: blur(9px);
     border-radius: 12px;
+    border:2px ridge rgba(230,227,227,0.9);
 }
 #about:hover{
-    transition:all 0.5s cubic-bezier(0.8, 0.25, 0.8, 0.25);
-    box-shadow: 0 20px 20px rgba(230,227,227,0.9);
-
+    transition:all 0.3s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 12px 0 12px 12px rgba(230,227,227,0.9);
 }
-img{
+#my_pic{
+    margin-top:3px;
     left:40%;
     border-radius:50%;
     border: 2px solid snow;
-    width: 270px;
-    margin-right:5px;
+    width: 250px;
+    margin-right:0px;
 }
 #h2_abt{
     font-size: 50px;
@@ -107,12 +107,18 @@ img{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.9));
     backdrop-filter: blur(9px);
     border-radius: 12px;
+    border:2px ridge rgba(230,227,227,0.9);
     margin-top:150px;
 }
-#techstack{
+#education:hover{
+    transition:all 0.3s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 12px 0 12px 12px rgba(230,227,227,0.9);
+}
+/*
+#education{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -121,6 +127,38 @@ img{
     border-radius: 12px;
     margin-top:150px;
 }
+#education:hover{
+    transition:all 0.3s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 0 20px 20px rgba(230,227,227,0.9);
+}
+*/
+#skills{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.9));
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    border:2px ridge rgba(230,227,227,0.9);
+    margin-top:150px;
+}
+#skills:hover{
+    transition:all 0.3s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 12px 0 12px 12px rgba(230,227,227,0.9);
+}
+/* #skills:hover{
+    transition:all 0.3s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 0 20px 20px rgba(230,227,227,0.9);
+}
+#skills{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    margin-top:150px;
+} */
 .ed{
     vertical-align: top;
     color:snow;
@@ -138,3 +176,100 @@ img{
     transform: scaleX(0.2);
     transform-origin:0% 25%;
 }
+#logo{
+    display:flex;
+    flex-wrap: wrap;
+}
+#logo_pic_1{
+    cursor: pointer;
+    width:100px;
+    margin-left: 100px;
+    height:100px;
+    transition: 0.3s ease-in-out;
+}
+#logo_pics{
+    cursor: pointer;
+    width:100px;
+    margin-left: 100px;
+    height:100px;
+    transition: 0.3s ease-in-out;
+}
+#logo_pic_1:hover{
+    transform: scale(1.2);
+}
+#logo_pics:hover{
+    transform: scale(1.2);
+}
+#contact{
+    padding-top: 150px;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+#sm{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+#contact_btn_div{
+    display:flex;
+    justify-content: center;
+}
+#cont_btn{
+    width:215px;
+    height:50px;
+    border-radius:12px;
+    font-size:28px;
+    border:3px solid snow;
+    color:snow;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,0.5));
+    transition: 0.3s ease-in-out;
+}
+#cont_btn:hover{
+    transition:0.3s;
+}
+#btn_text{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    text-align: center;
+}
+#btn_text:after{
+    color:snow;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.3s;
+}
+#cont_btn:hover #btn_text{
+    padding-right: 20px;
+}
+#cont_btn:hover #btn_text:after{
+    opacity:1;
+    right:0;
+}
+a i{
+    transition:0.3s;
+}
+a i:hover{
+    transform:scale(1.2);
+    color:snow;
+}
+.ed_info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+#ed_logo{
+    cursor:pointer;
+    margin-left: 50px;
+    width:150px;
+    image-rendering: optimizeQuality;
+    transition:0.3s;
+}
+#ed_logo:hover{
+    transform: scale(1.2);
+}
+
