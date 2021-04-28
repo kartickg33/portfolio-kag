@@ -15,7 +15,7 @@ body{
     justify-content: center;
 }
 .active{
-    color:red;
+    color:rgb(158,37,24);
     padding-left: 20px;
     padding-right: 20px;
     font-size: 24px;
@@ -54,17 +54,87 @@ a[href="#contact"]{
 }
 .nav-link:hover{
     transition:0.5s;
-    color:red;
+    color:rgb(158,37,24);
 }
 #home{
-    margin-top: 50px;
+    padding-top:150px;
     color:snow;
-    font-size:32px;
-    top:50%;
+    font-size:40px;
     left:50%;
-    height:400px;
+    height:200px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+#about{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+}
+#about:hover{
+    transition:all 0.5s cubic-bezier(0.8, 0.25, 0.8, 0.25);
+    box-shadow: 0 20px 20px rgba(230,227,227,0.9);
 
+}
+img{
+    left:40%;
+    border-radius:50%;
+    border: 2px solid snow;
+    width: 270px;
+    margin-right:5px;
+}
+#h2_abt{
+    font-size: 50px;
+    vertical-align: top;
+    color:snow;
+    text-align: left;
+    margin-left:50px;
+}
+#h2_abt:hover{
+    transition: 0.5s;
+    color:rgb(158,37,24);
+}
+#p_abt{
+    margin-left:15px;
+    font-size:24px;
+    line-height: 2rem;
+    color:snow;
+}
+#education{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    margin-top:150px;
+}
+#techstack{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1),rgba(0,0,0,0.4));
+    backdrop-filter: blur(9px);
+    border-radius: 12px;
+    margin-top:150px;
+}
+.ed{
+    vertical-align: top;
+    color:snow;
+    text-align: left;
+    margin-left:50px;
+}
+.ed:after{
+    display:block;
+    content: '';
+    border-bottom: 3px solid snow;  
+    transform: scaleX(0);  
+  }
+.ed:hover:after{ 
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0.2);
+    transform-origin:0% 25%;
+}
